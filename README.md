@@ -19,7 +19,6 @@
 - **Creador de rutinas:** organización en tres niveles — Rutinas → Días → Ejercicios.
 - **Catálogo de ejercicios:** 35 ejercicios clasificados por grupo muscular, tipo (compuesto/accesorio) y prioridad (Tier A/B).
 - **Personalización por serie:** cada ejercicio permite editar series individuales con sus reps y peso.
-- **Días con código de color:** cada día de entrenamiento tiene un color distintivo para identificarlo rápido.
 - **Descanso entre ejercicios:** modal de descanso con cuenta regresiva al terminar cada ejercicio.
 - **Historial de entrenamientos:** registro de cada sesión completada, con buscador por día para revisar el progreso.
 - **Perfil de usuario:** datos personales editables (nombre, edad, peso, altura).
@@ -33,11 +32,11 @@
 
 | Pantalla principal | Detalle de rutina | Día de entrenamiento |
 |:---:|:---:|:---:|
-| ![Principal](screenshots/principal.png) | ![Rutina](screenshots/rutina.png) | ![Día](screenshots/dia.png) |
+| ![Principal](screenshots/clockprincipal.jpg) | ![Rutina](screenshots/clockdetallerutina.jpg) | ![Día](screenshots/clockdetalledia.jpg) |
 
-| ClockFit Activo | Resumen | Perfil |
+| ClockFit Activo | Resumen | Historial |
 |:---:|:---:|:---:|
-| ![Activo](screenshots/activo.png) | ![Resumen](screenshots/resumen.png) | ![Perfil](screenshots/perfil.png) |
+| ![Activo](screenshots/clockactivo.jpg) | ![Resumen](screenshots/clockresumen.jpg) | ![Historial](screenshots/clockhistorial.jpg) |
 
 
 ---
