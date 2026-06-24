@@ -9,7 +9,7 @@ import { useRoutines } from '../context/RoutinesContext';
 import RoutineCard from '../components/RoutineCard';
 import CreateRoutineModal from '../components/CreateRoutineModal';
 
-const userName = 'Johan';
+const userName = 'Usuario';
 const MAX_ROUTINES = 3;
 
 export default function HomeScreen({ navigation }) {

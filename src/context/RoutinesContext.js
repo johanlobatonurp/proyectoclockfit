@@ -4,10 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const RoutinesContext = createContext();
 const STORAGE_KEY = '@clockfit_routines';
 
-const SEED = [
-  { id: '1', name: 'Push Pull Legs', description: 'Rutina de 3 veces a la semana', days: [] },
-  { id: '2', name: 'Upper Lower', description: 'Rutina de 4 veces a la semana', days: [] },
-];
+const SEED = [];
 
 export function RoutinesProvider({ children }) {
   const [routines, setRoutines] = useState([]);

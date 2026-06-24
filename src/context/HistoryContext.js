@@ -8,16 +8,23 @@ const STORAGE_KEY = '@clockfit_history';
 export function HistoryProvider({ children }) {
   const [history, setHistory] = useState([]);
   const [loaded, setLoaded] = useState(false);
+  const SEED_DEMO_DATA = false;
 
   useEffect(() => {
     (async () => {
       try {
         const stored = await AsyncStorage.getItem(STORAGE_KEY);
-        const parsed = stored ? JSON.parse(stored) : [];
-        setHistory(parsed.length > 0 ? parsed : mockHistory);
+        if (stored !== null) {
+          setHistory(JSON.parse(stored));
+        } else if (SEED_DEMO_DATA) {
+          setHistory(mockHistory);
+          await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(mockHistory)); // lo fija en tu celular
+        } else {
+          setHistory([]);
+        }
       } catch (e) {
         console.warn('Error cargando historial', e);
-        setHistory(mockHistory);
+        setHistory([]);
       } finally {
         setLoaded(true);
       }

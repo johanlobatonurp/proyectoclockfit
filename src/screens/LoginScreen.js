@@ -9,7 +9,7 @@ import { useAuth } from '../context/AuthContext';
 
 export default function LoginScreen() {
   const { login } = useAuth();
-  const [email, setEmail] = useState('clockfit@gmail.com');
+  const [email, setEmail] = useState('usuario@gmail.com');
   const [password, setPassword] = useState('clockfit123');
 
   return (

@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const ProfileContext = createContext();
 const STORAGE_KEY = '@clockfit_profile';
 
-const DEFAULT_PROFILE = { name: 'Johan', age: 25, weight: 75, height: 178 };
+const DEFAULT_PROFILE = { name: 'Usuario', age: 0, weight: 0, height: 0 };
 
 export function ProfileProvider({ children }) {
   const [profile, setProfile] = useState(DEFAULT_PROFILE);
